@@ -76,3 +76,27 @@
             - might contain smart contract itself
 - verification key - public keey
 - signing key - private key
+
+# Blocks
+
+- block - place where blockchain data is stored
+    - magic number - identifies network for block
+    - block size - size limit of the block
+    - block header - contains metadata on block
+    - transaction count - number of transactions
+    - transaction data 
+    - version
+    - previous block hash
+    - hash merkle root
+    - timestamp
+    - bits/difficulty - difficulty rating of block
+    - nonce - proves block is valid/it has been validated
+        - added by miner
+    - block reward
+- genesis block - on bitcoin blockchain, this is the block ever created, it contains special information on the blockchain network as a whole
+    - defines many things, for example:
+        - difficulty & difficulty interval
+        - mining reward & reward changes
+        - circulating supply
+- nonce - special number that is added to the contents of a block by miners
+    - used to make the hash of a block start with a certain number of zeros, it provides the proof of work for a block
