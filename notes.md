@@ -24,3 +24,4 @@
 | single point of failure, easy to take down      | no single point of failure                      |
 | central authority that can sensor/modify data   | censorship is much harder, usually impossible   |
 | participation is regulated by central authority | anyone can participate, no 'gatekeepers'        |
+
