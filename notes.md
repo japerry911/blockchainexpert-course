@@ -77,7 +77,7 @@
 - verification key - public keey
 - signing key - private key
 
-# Blocks
+### Blocks
 
 - block - place where blockchain data is stored
     - magic number - identifies network for block
@@ -100,3 +100,11 @@
         - circulating supply
 - nonce - special number that is added to the contents of a block by miners
     - used to make the hash of a block start with a certain number of zeros, it provides the proof of work for a block
+
+### Blockchain Security
+
+- double spending - occurs when someone can spend the same funds multiple times
+- balance - having sufficient balance to send funds
+    - which is why you need to provide transaction inputs
+- exploited code
+- 51% attack - occurs when some entity is able to control over 50% of blockchain network mining hash rate
