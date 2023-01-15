@@ -108,3 +108,15 @@
     - which is why you need to provide transaction inputs
 - exploited code
 - 51% attack - occurs when some entity is able to control over 50% of blockchain network mining hash rate
+
+### Proof of Work
+
+- proof of work - part of a consensus mechanism used by a blockchain network
+    - miners compete to find a valid proof of work for blocks they assembled based on recent transactions
+    - involves finding a special value (the nonce) that when added to a block makes the hash of the block start with a certain number of zeros
+- mining difficulty - represented by a field known as bits
+    - the number of bits states the number of zeros that the hash of each block must start with to be accepted as valid
+    - miners must find a valid nonce that when added to a block makes its hash start with the number of bits zeros
+- miner - special node on a blockchain network that is responsible for validating incoming transactions and assembling them into blocks
+    - miners compete/race to be the first to submit a valid block to the network
+    - upon submitting a valid block, miners are compensated by receiving that block's reward (if any) and the sum of all of the transaction fees (gas)
