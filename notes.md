@@ -41,3 +41,16 @@
     - no known inverse
     - deterministic
     - very rare hash collisions
+
+### Wallets
+
+- private key
+    - acts as password for account, do **not** share
+- public key
+    - identifier for account, safe to share
+    - longer and less convenient form of an address
+- address
+    - on Ethereum, an address is made up of 20 bytes, shorter version of public key
+- seed phrases
+    - backup/recovery code for wallet
+    - 12 or 21 English words (2048 words to pick from)
