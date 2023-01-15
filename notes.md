@@ -54,3 +54,25 @@
 - seed phrases
     - backup/recovery code for wallet
     - 12 or 21 English words (2048 words to pick from)
+
+### Transactions
+
+- digital signature - attached to message or transaction to prove that the sending user has adequate permissions
+    - to create you need:
+        - private key (signing key) associated with public key of the sender of the transaction
+- transaction has:
+    - from
+    - to
+    - amount
+    - signature
+    - gas/fee
+        - pays the miners to have the transaction added to blockchain
+    - tx (transaction) hash
+        - hash of above information
+        - unique identifier for transaction
+    - for ethereum two additional fields
+        - nonce - transaction counter
+        - data - contains things like "what function is called on smart contract"
+            - might contain smart contract itself
+- verification key - public keey
+- signing key - private key
