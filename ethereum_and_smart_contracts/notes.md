@@ -16,3 +16,8 @@
 - solidity - official programming language of Ethereum
     - smart contracts
     - turing complete
+
+### Smart Contracts And DApps
+
+- DApp - decentralized application that runs on a blockchain and utilizes the blockchain as single source of truth
+- smart contracts - code that is stored on the blockchain that runs when certain conditions are met
