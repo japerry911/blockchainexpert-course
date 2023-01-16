@@ -57,3 +57,12 @@
     - does this using smart contract/code
 - endogenous - refers to originating inside the system
 - exogenous - refers to originating outside the system
+
+### Introduction to Oracles
+
+- oracle - an entity that provides off-chain data to the blockchain for use in smart contracts
+    - chainlink provides one of the most popular decentralized oracle networks
+- chainlink - oracle network
+    - layer 2 solutions that relies on ethereum
+    - provides a bridge between blockchain networks and data sources
+    - referred to as blockchain middleware
