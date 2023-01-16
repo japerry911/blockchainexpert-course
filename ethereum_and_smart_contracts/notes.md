@@ -46,3 +46,14 @@
     - layer 1 networks can validate transactions independently
 - layer 2 - refers to a protocol that relies on an integration with an existing layer 1 blockchain network
     - layer 2 networks are typically faster or provide scalability solutions, but may lack decentralization and security
+
+### Stablecoins
+
+- fiat collateralized - coins that hold fiat currencies (US dollar, Canadian dollar, Euro) as reserve assets
+    - typically audited regularly and must hold at least $1 for each coin minted
+- crypto collateralized - coin that holds other cryptocurrencies as reserve assets
+    - hold excess amounts in reserves due to volatility of cryptocurrencies
+- algorithmic stablecoin - maintain its price stability by manipulating the supply of coins to adjust its price
+    - does this using smart contract/code
+- endogenous - refers to originating inside the system
+- exogenous - refers to originating outside the system
