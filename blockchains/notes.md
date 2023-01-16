@@ -130,3 +130,14 @@
     - uses significantly less energy than proof of work
 - validator - used to denote a node in a proof of stake blockchain network that validates transactions and creates new blocks
     - typically must provide a stake/collateral to ensure they act ethically
+
+### Nodes and Masternodes
+
+- node - any machine that is connected to blockchain network
+    - full or partial
+        - store full blockchain, or partial
+- full node - node that stores entire history of blockchain
+    - in Bitcoin, all miner nodes are full nodes
+- masternode - typically full nodes, require heavier equipment and may facilitate special operations such as voting
+    - special nodes, only exist on some blockchains
+    - providers typically need to provide a stake and are compensated for their services
