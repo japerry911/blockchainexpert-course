@@ -39,3 +39,10 @@
     - have their own unique ID
 - erc-721 token - standard for non-fungible tokens (NFTs) on ethereum
     - contracts that represent an erc-721 token must implement specified functionality that allow for uniform usage/behvavior of these tokens
+
+### Blockchain Comparisons
+
+- layer 1 - refers to the base blockchain network such as ethereum or bitcoin and its underlying infrastructure
+    - layer 1 networks can validate transactions independently
+- layer 2 - refers to a protocol that relies on an integration with an existing layer 1 blockchain network
+    - layer 2 networks are typically faster or provide scalability solutions, but may lack decentralization and security
