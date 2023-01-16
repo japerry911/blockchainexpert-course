@@ -32,3 +32,10 @@
     - example - erc-20 tokens
 - non-fungible - unique tokens, NFTs
  
+### ERC-721 Tokens (NFTs)
+
+- non-fungible - unique, can't be replaced
+    - NFTs
+    - have their own unique ID
+- erc-721 token - standard for non-fungible tokens (NFTs) on ethereum
+    - contracts that represent an erc-721 token must implement specified functionality that allow for uniform usage/behvavior of these tokens
