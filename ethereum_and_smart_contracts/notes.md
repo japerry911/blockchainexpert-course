@@ -21,3 +21,14 @@
 
 - DApp - decentralized application that runs on a blockchain and utilizes the blockchain as single source of truth
 - smart contracts - code that is stored on the blockchain that runs when certain conditions are met
+
+### ERC-20 Tokens
+
+- token - created by smart contract, relies on blockchain network
+- coin - native cryptocurrency of the blockchain network
+    - example - ether of ethereum
+- erc-20 token - represents a standard for fungible tokens on ethereum
+- fungible - refers to the ability to replace or to be replaced by another identical item
+    - example - erc-20 tokens
+- non-fungible - unique tokens, NFTs
+ 
