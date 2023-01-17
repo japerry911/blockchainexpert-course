@@ -65,3 +65,18 @@
 - mapping - reference data type
     - allows you to store key-value pairs
     - can only be stored in contract storage
+
+### Functions And Access Modifiers
+
+- public - visibility modifier that can be used to mark variables and functions as accessible from within or outside of the contract
+    - can be accessed from any location when marked as public
+- private - visibility modifier that can be used to mark variables and functions as only accessible from within contract it is defined in
+    - can only be accessed from location they are defined in
+- internal - visibility modifer used to mark variables and functions as only accessible from within the contract or any derived contracts
+    - internal functions can only be called from the contract they are defined in
+- external - visibility modifier used to mark variables and functions as only callable from outside of the contract itself
+    - external functions can only be called from outside of the blockchain or from another smart contract
+- pure - a pure function is one that does not rely on any contract state to execute
+    - can call other pure functions and utilize types like structs and enums
+- view - a function that does not mutate/modify the state of a contract, but may read it
+    - view functions can read contract state and call other view and pure functions
