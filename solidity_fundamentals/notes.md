@@ -92,11 +92,11 @@
             - `block.difficulty`
             - `block.timestamp`
         - `msg`
-            - `msg.sender`
+            - `msg.sender` - receive the address of whoever made the external function call, which could be another smart contract and not necessarily the address of whoever originally created the transaction
             - `msg.data`
             - `msg.sig`
             - `msg.value`
         - `tx`
-            - `tx.origin`
+            - `tx.origin` - the most correct way to determine the address of the creator of the transaction
         - `this`
 - global method example - `gasleft()`
