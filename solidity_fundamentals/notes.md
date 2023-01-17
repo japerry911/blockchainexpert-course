@@ -36,9 +36,16 @@
     - foundation for Ethereum's entire operating structure
 
 ### Solidity Data Types
+
 - data types
     - `uint`
     - `int`
     - `bool`
     -  `address`
     - `bytes`
+
+### Operators & Type Conversions
+
+- `&&` - and
+- `||` - or
+- `!` - not
