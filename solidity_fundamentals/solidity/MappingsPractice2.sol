@@ -1,3 +1,5 @@
+// Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
 pragma solidity >=0.4.22 <=0.8.17;
 
 contract DebtTracking {
@@ -16,20 +18,22 @@ contract DebtTracking {
         address payingAddress,
         uint256 amount
     ) public {
-        owing[toBePaidAddress][payingAddress] -= amount;
+        uint256 amountOwed = owing[toBePaidAddress][payingAddress];
 
-        if (owing[toBePaidAddress][payingAddress] < 0) {
-            owing[payingAddress][toBePaidAddress] = owing[toBePaidAddress][
-                payingAddress
-            ];
+        if (amount > amountOwed) {
+            uint256 change = amount - amountOwed;
+            owing[toBePaidAddress][payingAddress] = 0;
+            owing[payingAddress][toBePaidAddress] += change;
+        } else {
+            owing[toBePaidAddress][payingAddress] -= amount;
         }
     }
 
-    function getDebt(address toBePaidAddress, address payingAddress)
+    function getDebt(address owedAddress, address payingAddress)
         public
         view
         returns (uint256)
     {
-        return owing[toBePaidAddress][payingAddress];
+        return owing[owedAddress][payingAddress];
     }
 }
