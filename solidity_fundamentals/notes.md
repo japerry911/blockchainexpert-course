@@ -80,3 +80,23 @@
     - can call other pure functions and utilize types like structs and enums
 - view - a function that does not mutate/modify the state of a contract, but may read it
     - view functions can read contract state and call other view and pure functions
+
+### Global Keywords
+
+- global keywords - give you information about current block, transaction, and more
+    - some of these global keywords
+        - `block` - block that the transaction is on, **not** the block where the contract is on
+            - `block.number`
+            - `block.chainid`
+            - `block.gaslimit`
+            - `block.difficulty`
+            - `block.timestamp`
+        - `msg`
+            - `msg.sender`
+            - `msg.data`
+            - `msg.sig`
+            - `msg.value`
+        - `tx`
+            - `tx.origin`
+        - `this`
+- global method example - `gasleft()`
