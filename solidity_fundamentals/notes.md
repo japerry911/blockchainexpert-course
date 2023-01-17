@@ -49,3 +49,19 @@
 - `&&` - and
 - `||` - or
 - `!` - not
+
+### Conditionals
+
+- conditionals
+    - `>`
+    - `>=`
+    - `<`
+    - `<=`
+    - `==`
+    - `!=`
+
+### Mappings
+
+- mapping - reference data type
+    - allows you to store key-value pairs
+    - can only be stored in contract storage
