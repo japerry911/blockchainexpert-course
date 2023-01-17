@@ -27,3 +27,18 @@
     - paid in ether and denoted in gwei
 - source code - the code that programmers read/write
 - bytecode - program code that is been compiled from source code into a lower level image that can be understood by an interpreter
+
+### Deploying Smart Contracts
+
+- EVM - Ethereum Virtual Machine
+    - computation engine that runs on ethereum nodes, such as miners
+    - allows for the execution of smart contracts
+    - foundation for Ethereum's entire operating structure
+
+### Solidity Data Types
+- data types
+    - `uint`
+    - `int`
+    - `bool`
+    -  `address`
+    - `bytes`
