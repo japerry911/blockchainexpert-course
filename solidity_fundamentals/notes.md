@@ -100,3 +100,24 @@
             - `tx.origin` - the most correct way to determine the address of the creator of the transaction
         - `this`
 - global method example - `gasleft()`
+
+### Sending And Receiving Eth
+
+- ether units - Solidity provides built-in keywords that make working with amounts of Ether easier
+    - `wei` - smallest unit of ether
+    - `gwei` - equal to 1,000,000,000 `wei` or 10e9 `wei`
+    - `ether` - equal to 1,000,000,000,000,000,000 `wei` or 10e18 `wei`
+- receiving methods
+    1. `fallback`
+        - used as a last resort or backup in case the contract cannot handle the call it receives
+        - fallback is called anytime Ethereum is sent to the contract and no receive function is defined
+        - if the receive function is defined and no msg.data is passed then receive will be called instead of fallback
+        - If Ethereum is sent and msg.data is not empty then the fallback function will be called instead of receive. 
+        - Lastly, if a function that does not exist on the contract is called the fallback function will be called.
+    2. `receive`
+    3. custom `payable` method 
+- sending methods
+    1. `send`
+    2. `transfer`
+    3. `call`
+        - recommended
