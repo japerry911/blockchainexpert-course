@@ -121,3 +121,19 @@
     2. `transfer`
     3. `call`
         - recommended
+
+### Exceptions And Errors
+
+- require - Solidity function that is used for error handling
+    - if condition passed to require returns `false`, then the transaction will fail and the contract state will revert
+    - used to check for preconditions that should be `true` before executing a block of code
+    - returns remaining gas
+    - The require statement is used to check for prerequisites before running a function. In this case the prerequisite is that the caller must be a specific address, warranting the use of a require statement. If a require statement fails it returns the remaining gas to the sender and reverts any state changes.
+- assert - Solidity function that is used for error handling
+    - if condition passed to assert returns `false`, then the transaction will fail and the contract state will revert
+    - used to check for conditions that should never be `false`
+    - consumes all of gas
+    - An assert statement is used to check for invariants and verify contract state. An assert statement should never return false, if it does this means there is a bug or issue with your smart contract. assert's are used as a last line of defense and are typically placed near the end of a function. In this scenario, since we are checking an invariant related to state of the smart contract we would use an assert and hope that this would never be false.
+- revert - Solidity function that when called causes a transaction to fail and the state of the contract to revert
+    - used as alternative to `require` when you have complex logic
+    - The revert statement does the same as the require statement and is typically used when handling complex logic. It doesn't evaluate a condition or return a value, however, it may include a custom error message or use a custom error object.
