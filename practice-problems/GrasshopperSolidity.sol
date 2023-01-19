@@ -10,7 +10,7 @@ contract Kata {
     function summation(int256 n) public pure returns (int256) {
         int256 total;
 
-        for (int256 i = 0; i < n; i++) {
+        for (int256 i = 0; i <= n; i++) {
             total += i;
         }
 
