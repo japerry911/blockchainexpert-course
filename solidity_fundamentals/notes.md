@@ -137,3 +137,24 @@
 - revert - Solidity function that when called causes a transaction to fail and the state of the contract to revert
     - used as alternative to `require` when you have complex logic
     - The revert statement does the same as the require statement and is typically used when handling complex logic. It doesn't evaluate a condition or return a value, however, it may include a custom error message or use a custom error object.
+
+### Constructors
+
+- constructor - called one time when the contract is deployed
+    - used to initialize values or accept initial vlaues required by the contract
+    - example:
+    ```solidity
+    contract Constructor {
+        uint256 count;
+
+        constructor(uint256 startingCount) {
+            count = startingCount;
+        }
+    }
+    ```
+
+### Self Destruct
+
+- self destruct - `selfdestruct` functions removes a smart contract from the blockchain and sends the balance of that contract to a provided address
+    - the selfdestruct function always passes Ethereum to the address that is passed as an argument, even if that address is a smart contract that doesn't implement fallback or receive.
+    - Calling selfdestruct immediately deletes the state held in the smart contract and makes it unusable. However, all transactions that were sent to the smart contract are still stored on the blockchain.
