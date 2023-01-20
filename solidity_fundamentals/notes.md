@@ -212,3 +212,8 @@
 
 - gas - fee required to execute transactions or smart contracts
     - paid in ether and denoted in gwei
+- transaction fee for of a completed transaction
+    - `gas units * (base fee + tip fee)`
+        - The transaction fee of a completed transaction is determined by multiplying the gas units by the gas price which is equal to (base fee + tip fee). The gas units value represents the amount of computational effort that was used to process the transaction while the gas price is what the transaction sender specified as the price they are willing to pay per unit of gas.
+- If a transaction runs out of gas the gas is not refunded. This is because the gas has already been consumed by the EVM and computations have already been performed.
+    - Note: if a transaction that changes the state of a smart contract runs out of gas the state of the contract is reverted.
