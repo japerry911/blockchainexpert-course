@@ -185,3 +185,25 @@
     - can use `pop()` and `push()`
 - arrays are costly to use in terms of gas, especially dynamic-sized
 - In Solidity, any assignment from storage to memory always makes a copy
+
+### Strings
+
+- strings - data type used to store UTF-8 encoded characters
+    - reference type
+    - not possible to do index access, `+=`, `pop`, `push`, `length`, etc...
+        - have to manipulate string yourself
+    - not very flexible
+    - expensive to use
+    - difficult to manipulate
+    - it is prefered to use the `bytes` type when possible
+- bytes - data type that represents an array of bytes
+    - useful for storing characters as raw data
+    - must be stored in `memory`, `calldata`, or `storage`
+    - have index access, `pop`, `push`, `length`, `delete`, etc...
+    - example:
+    ```solidity
+        bytes myRawData = "hello world";
+    ```
+- Both string and bytes values can be converted between each type. For example, it is valid to assign a string literal ("hello world") to a bytes variable.
+- comparison of strings and bytes
+    - The string type stores the UTF-8 encoded data of an underlying bytes array. When using string types you have no access to .length or index access; this makes strings very inflexible. The bytes type stores raw byte data and provides index access as well as the .length property. Both bytes and string types can be stored in memory, storage and calldata. However, if a bytes type is defined in storage it can be a dynamic byte array allowing access to .push() and .pop().
