@@ -168,3 +168,20 @@
     - The maximum number of parameters you can mark as indexed is three. indexed keywords are referred to as topics and are the fields you can use to search for events.
     - Events can be declared in the both the global namespace as well as the contract namespace.
     - In Solidity, you define an event by using the type event followed by the event name and the event parameters. If you decide to list an event parameter as indexed you put the indexed keyword between the type and the parameter name. Once the event is defined you can emit it by using the emit keyword followed by the event with the correct parameters passed.
+
+### Arrays
+
+- fixed-sized array - data structure whose size is determined when it is created/allocated and cannot change
+    - example:
+    ```solidity
+        uint256[5] fixedArray = [1, 2, 3, 4, 5];
+    ```
+- dynamic-sized array - data structure that allows elements to be removed or added and can change its size
+    - can only be defined in storage and have access to methods such as `push()` and `pop()`
+    - example:
+    ```solidity
+        uint256[] = dynamicArray;
+    ```
+    - can use `pop()` and `push()`
+- arrays are costly to use in terms of gas, especially dynamic-sized
+- In Solidity, any assignment from storage to memory always makes a copy
