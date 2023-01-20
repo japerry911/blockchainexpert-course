@@ -158,3 +158,13 @@
 - self destruct - `selfdestruct` functions removes a smart contract from the blockchain and sends the balance of that contract to a provided address
     - the selfdestruct function always passes Ethereum to the address that is passed as an argument, even if that address is a smart contract that doesn't implement fallback or receive.
     - Calling selfdestruct immediately deletes the state held in the smart contract and makes it unusable. However, all transactions that were sent to the smart contract are still stored on the blockchain.
+
+### Events
+
+- event - emitted by smart contracts and stored in transaction logs
+    - useful for transmitting information from a smart contract to outside of the blockchain network
+    - clients outside of the blockchain can query event data or listen to specific events to occur
+    - Event data is stored in transaction receipts. It is not stored in the contract.
+    - The maximum number of parameters you can mark as indexed is three. indexed keywords are referred to as topics and are the fields you can use to search for events.
+    - Events can be declared in the both the global namespace as well as the contract namespace.
+    - In Solidity, you define an event by using the type event followed by the event name and the event parameters. If you decide to list an event parameter as indexed you put the indexed keyword between the type and the parameter name. Once the event is defined you can emit it by using the emit keyword followed by the event with the correct parameters passed.
