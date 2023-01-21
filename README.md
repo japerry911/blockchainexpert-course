@@ -1,1 +1,1 @@
-# blockchainexpert-course
+# solidity_and_blockchain_study
